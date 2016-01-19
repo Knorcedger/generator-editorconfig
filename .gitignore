@@ -1,0 +1,8 @@
+# OS trash files
+.DS_Store
+thumbs.db
+
+# Node and bower modules and logs
+node_modules/
+npm-debug.log
+bower_components/

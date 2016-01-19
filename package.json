@@ -1,0 +1,32 @@
+{
+  "name": "generator-editorconfig",
+  "description": "A Yeoman generator that creates an EditorConfig file.",
+  "version": "1.0.0",
+  "author": "Knorcedger",
+  "bugs": {
+    "url": "https://github.com/Knorcedger/generator-editorconfig/issues"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0"
+  },
+  "homepage": "https://github.com/Knorcedger/generator-editorconfig#readme",
+  "keywords": [
+    "editorconfig",
+    "generator",
+    "yeoman",
+    "yeoman-generator"
+  ],
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knorcedger/generator-editorconfig.git"
+  },
+  "scripts": {
+    "test": "eslint app"
+  },
+  "dependencies": {
+    "yeoman-generator": "^0.22.4"
+  }
+}
