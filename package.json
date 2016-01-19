@@ -1,7 +1,7 @@
 {
   "name": "generator-editorconfig",
   "description": "A Yeoman generator that creates an EditorConfig file.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Knorcedger",
   "bugs": {
     "url": "https://github.com/Knorcedger/generator-editorconfig/issues"
