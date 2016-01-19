@@ -2,14 +2,23 @@
 
 A Yeoman generator that creates an EditorConfig file.
 
+> [EditorConfig](http://editorconfig.org) helps developers define and maintain consistent coding styles between different editors and IDEs.
+
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install generator-editorconfig --save
+npm install -g generator-editorconfig --save
 ```
 
+or download it through [Yeoman](http://yeoman.io).
+
+Then, to generate the .editorconfig file in your project use
+
+```sh
+yo editorconfig
+```
 
 ## Tests
 
@@ -17,16 +26,10 @@ npm install generator-editorconfig --save
 npm install
 npm test
 ```
-```
-
-> generator-editorconfig@1.0.0 test /home/knorcedger/dev/generator-editorconfig
-> eslint app
-
-```
 
 ## Dependencies
 
-None
+- [yeoman-generator](https://github.com/yeoman/generator): Rails-inspired generator system that provides scaffolding for your apps
 
 ## Dev Dependencies
 
