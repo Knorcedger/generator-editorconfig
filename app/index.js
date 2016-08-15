@@ -1,22 +1,32 @@
 'use strict';
 var generators = require('yeoman-generator');
 var indentation;
+var size;
 
 module.exports = generators.Base.extend({
 	// ask the user for his preferred indentation character
 	prompting: function() {
 		var done = this.async();
-		this.prompt({
+		this.prompt([{
 			type: 'input',
 			name: 'indentation',
 			message: 'Prefer tabs (t) or spaces (s) for indentation?',
 			default: 't'
-		}, function(answers) {
+		}, {
+			when: function(response) {
+				return response.indentation === 's';
+			},
+			type: 'input',
+			name: 'size',
+			message: 'How many spaces?',
+			default: '2'
+		}], function(answers) {
 			if (answers.indentation === 't') {
 				indentation = 'tab';
 			} else {
 				indentation = 'space';
 			}
+			size = answers.size;
 			done();
 		});
 	},
@@ -26,7 +36,8 @@ module.exports = generators.Base.extend({
 			this.templatePath('editorconfig'),
 			this.destinationPath('.editorconfig'),
 			{
-				indentation: indentation
+				indentation: indentation,
+				size: size
 			}
 		);
 	}

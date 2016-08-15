@@ -1,7 +1,8 @@
 root = true
 
 [*]
-indent_style = <%= indentation %>
+indent_style = <%= indentation %><% if (size) { %>
+indent_size = <%= size %><% } %>
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
