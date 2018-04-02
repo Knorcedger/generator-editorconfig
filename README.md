@@ -8,6 +8,13 @@ A Yeoman generator that creates an EditorConfig file.
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
+Using npx
+```sh
+npx -p yo -p generator-editorconfig -- yo editorconfig
+```
+
+or install it locally
+
 ```sh
 npm install -g generator-editorconfig --save
 ```
